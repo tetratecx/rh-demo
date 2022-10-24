@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: fraud
 resources:
   - 01-namespace.yaml
+  - 01-cni.yaml
   - 02-rbac.yaml
   - 03-frontend.yaml
   - 04-backend.yaml
