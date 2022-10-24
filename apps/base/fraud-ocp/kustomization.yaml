@@ -7,5 +7,5 @@ resources:
   - 02-rbac.yaml
   - 03-frontend.yaml
   - 04-backend.yaml
-  # - 05-ingress.yaml
+  - 05-ingress.yaml
   # - 06-trafficgenerator.yaml
