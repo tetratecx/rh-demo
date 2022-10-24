@@ -15,7 +15,7 @@ patches:
             containers:
               - name: manager
                 securityContext:
-                  runAsUser: 65534
+                  runAsUser: 1000710005
                   seccompProfile:
                     $patch: delete      
     target:
