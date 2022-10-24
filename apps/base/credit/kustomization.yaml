@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: credit
+resources:
+  - 01-namespace.yaml
+  - 02-rbac.yaml
+  - 03-frontend.yaml
+  - 04-backend.yaml
+  # - 05-ingress.yaml
+  # - 06-trafficgenerator.yaml
