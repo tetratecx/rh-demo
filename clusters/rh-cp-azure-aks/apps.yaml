@@ -9,5 +9,5 @@ spec:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-  path: ./apps/rh-cp-aws-ocp
+  path: ./apps/rh-cp-azure-aks
   prune: true
