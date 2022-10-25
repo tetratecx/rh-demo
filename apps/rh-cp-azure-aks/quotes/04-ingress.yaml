@@ -7,12 +7,6 @@ spec:
   kubeSpec:
     service:
       type: LoadBalancer
-      annotations:
-        "external-dns.alpha.kubernetes.io/hostname": "quotes.aws-east.yosemite.cx.tetrate.info."
-        "external-dns.alpha.kubernetes.io/alias": "true"
-        "external-dns.alpha.kubernetes.io/set-identifier": "aws-east"
-        "external-dns.alpha.kubernetes.io/aws-region": "us-east-2"
-        "service.beta.kubernetes.io/aws-load-balancer-type": "nlb"
 ---
 apiVersion: cert-manager.io/v1
 kind: Certificate
@@ -21,7 +15,7 @@ metadata:
 spec:
   secretName: quotes-cert
   issuerRef:
-    name: letsencrypt-dns-cluster-issuer
+    name: selfsigned-issuer-control-plane
     kind: ClusterIssuer
   dnsNames:
-  - quotes.aws-east.yosemite.cx.tetrate.info
+  - quotes.rh-demo.cx.tetrate.info

@@ -12,14 +12,14 @@
 #         "external-dns.alpha.kubernetes.io/set-identifier": "aws-east"
 #         "external-dns.alpha.kubernetes.io/aws-region": "us-east-2"
 #         "service.beta.kubernetes.io/aws-load-balancer-type": "nlb"
-# ---
-# apiVersion: cert-manager.io/v1
-# kind: Certificate
-# metadata:
-#   name: frontend
-# spec:
-#   dnsNames:
-#   - fraud.aws-east-dev.yosemite.cx.tetrate.info
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: frontend
+spec:
+  dnsNames:
+  - fraud.azure-aks.rh-demo.cx.tetrate.info
 # ---
 # apiVersion: apps/v1
 # kind: Deployment

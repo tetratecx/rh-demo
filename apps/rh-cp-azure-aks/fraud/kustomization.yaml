@@ -3,5 +3,5 @@ kind: Kustomization
 namespace: fraud
 resources:
   - ../../base/fraud
-# patchesStrategicMerge:
-#   - values.yaml
+patchesStrategicMerge:
+  - values.yaml
