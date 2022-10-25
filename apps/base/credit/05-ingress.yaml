@@ -15,5 +15,5 @@ metadata:
 spec:
   secretName: frontend-cert
   issuerRef:
-    name: letsencrypt-dns-cluster-issuer
+    name: selfsigned-issuer-control-plane
     kind: ClusterIssuer

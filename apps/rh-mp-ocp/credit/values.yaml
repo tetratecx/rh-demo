@@ -19,7 +19,7 @@ metadata:
   name: frontend
 spec:
   dnsNames:
-  - fraud.azure-ocp.rh-demo.cx.tetrate.info
+  - credit.rh-demo.cx.tetrate.info
 # ---
 # apiVersion: apps/v1
 # kind: Deployment
