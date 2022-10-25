@@ -1,0 +1,19 @@
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  description: Market Data
+  displayName: Market Data
+  name: marketdata
+  organization: coreos-0-org
+  resourceVersion: '"VWF24DBkyw0="'
+  tenant: wealth-mgmt
+spec:
+  description: Market Data
+  displayName: Market Data
+  etag: '"VWF24DBkyw0="'
+  fqn: organizations/coreos-0-org/tenants/wealth-mgmt/workspaces/marketdata
+  namespaceSelector:
+    names:
+    - cp-azure-02/quotes
+  privileged: false
+

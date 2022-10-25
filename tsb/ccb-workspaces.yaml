@@ -1,0 +1,60 @@
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  description: credit
+  displayName: credit
+  name: credit
+  organization: coreos-0-org
+  resourceVersion: '"EHpTJttMEXo="'
+  tenant: ccb
+spec:
+  description: credit
+  displayName: credit
+  etag: '"EHpTJttMEXo="'
+  fqn: organizations/coreos-0-org/tenants/ccb/workspaces/credit
+  namespaceSelector:
+    names:
+    - mp-1/credit
+  privileged: false
+
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  description: fraud prod
+  displayName: fraud prod
+  name: fraud-prod
+  organization: coreos-0-org
+  resourceVersion: '"ZC5ZdzQSWeU="'
+  tenant: ccb
+spec:
+  description: fraud prod
+  displayName: fraud prod
+  etag: '"ZC5ZdzQSWeU="'
+  fqn: organizations/coreos-0-org/tenants/ccb/workspaces/fraud-prod
+  namespaceSelector:
+    names:
+    - mp-1/fraud
+    - cp-azure-02/fraud
+  privileged: false
+
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  description: fraud dev
+  displayName: fraud dev
+  name: fraud-dev
+  organization: coreos-0-org
+  resourceVersion: '"yicDqYylZI4="'
+  tenant: ccb
+spec:
+  description: fraud dev
+  displayName: fraud dev
+  etag: '"yicDqYylZI4="'
+  fqn: organizations/coreos-0-org/tenants/ccb/workspaces/fraud-dev
+  namespaceSelector:
+    names:
+    - dev-cluster/fraud-dev
+  privileged: false
+
