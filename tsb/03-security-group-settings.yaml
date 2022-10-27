@@ -1,0 +1,28 @@
+apiVersion: security.tsb.tetrate.io/v2
+kind: SecuritySetting
+metadata:
+  fqn: organizations/coreos-0-org/tenants/wealth-mgmt/workspaces/marketdata/securitygroups/security-endpoints/settings/default-setting
+  displayName: default-setting
+  group: security-endpoints
+  name: default-setting
+  organization: coreos-0-org
+  tenant: wealth-mgmt
+  workspace: marketdata
+spec:
+  displayName: default-setting
+  authenticationSettings:
+    trafficMode: REQUIRED
+  authorization:
+    mode: RULES
+    rules:
+      allow:
+      - from:
+          fqn: organizations/coreos-0-org/tenants/wealth-mgmt/workspaces/marketdata/securitygroups/security-endpoints
+        to:
+          fqn: organizations/coreos-0-org/tenants/wealth-mgmt/workspaces/marketdata/securitygroups/security-endpoints
+      - from:
+          fqn: organizations/coreos-0-org/tenants/ccb/workspaces/fraud-prod
+        to:
+          fqn: organizations/coreos-0-org/tenants/wealth-mgmt/workspaces/marketdata/securitygroups/security-endpoints
+
+
